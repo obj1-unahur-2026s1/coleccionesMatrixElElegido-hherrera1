@@ -4,6 +4,7 @@ object neo{
     method saltar() = energia / 2
     method vitalidad() = energia / 10
     method esElegido() = true
+
 }
 
 object morfeo {
@@ -12,7 +13,7 @@ object morfeo {
     method estaDescansado() = true 
     method esElegido() = false
     method saltar() { vitalidad - 1}
-    
+    method vitalidad() = vitalidad
 }
 
 object trinity {
@@ -20,6 +21,7 @@ object trinity {
 
     method esElegido() = false
     method saltar() {}
+    method vitalidad() = vitalidad
 }
 
 object nave {
